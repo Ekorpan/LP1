@@ -1,0 +1,158 @@
+.contact {
+	
+	background: $lightgrey;
+	margin: 0 auto;
+	text-align: center;
+	
+	&__title {
+		font-family: $title;
+		padding-top: 50px;
+		margin-bottom: 60px;
+		color: $fontcolor;
+		font-size: 50px;
+		font-weight: 700;
+		text-align: center;
+		position: relative;
+		padding-bottom: 20px;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 110px;
+			height: 2px;
+			background-color: $fontcolor;
+			right: 0;
+			margin: 0 auto;
+			display: block;
+			
+		}
+	}
+	&__map {
+		width: 100%;
+		height: 700px;
+		
+	}
+	&__adress-wrapper {
+		position: relative;
+	}
+	&__adress {
+		margin-top: -110px;
+		display: inline-block;
+		padding: 70px 20px 30px;
+		color: #fff;
+		background-color: $blue;
+		z-index: 0;
+	}
+}
+.adress {
+	&__title {
+		font-size: 18px;
+		line-height: 40px;
+	}
+	&__info {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	&__phone {
+		font-size: 20px;
+		
+		line-height: 40px;
+		text-decoration: none;
+		color: #fff;
+	}
+}
+.registration {
+	&__title {
+		color: $fontcolor;
+		font-weight: 700;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	&__desc {
+		margin-bottom: 75px;
+	}
+}
+
+.form {
+	text-align: left;
+	background: $lightgrey;
+	&__desc {
+		
+	}
+
+	&__name {
+		background: $lightgrey;
+		margin-top: 10px;
+		margin-bottom: 35px;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		width: 99%;
+		padding-left: 15px;
+			&:focus {
+				padding-left: 15px;
+				border-bottom: 1px solid grey;
+				border-left: 1px solid grey;
+			}
+			&:valid {
+      background: url('../images/tick.png');
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: right;
+      transition: all 0s;
+      }
+	}
+	&__tel {
+		background: $lightgrey;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 35px;
+		border-bottom: 1px solid black;
+		width: 99%;
+		padding-left: 15px;
+		&:focus {
+				padding-left: 15px;
+				border-bottom: 1px solid grey;
+				border-left: 1px solid grey;
+			}
+			&:valid {
+      background: url('../images/tick.png');
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: right;
+      transition: all 0s;
+      }
+	}
+	&__area {
+		border: 1px solid black;
+		margin-bottom: 35px;
+		padding-top: 15px;
+		padding-left: 15px;
+	}
+	&__button {
+		background: $fontcolor;
+		border: 1px solid black;
+		border-radius: 11px;
+		padding: 15px 63px;
+		cursor: pointer;
+		color: #FFF;
+		
+		&:hover {
+			background: #5DB0B6;
+		}
+
+		
+
+	}
+}
+.button-wrapper {
+	text-align: right;
+	margin-bottom: 75px;
+}
+.row {
+	width: 100%;
+}
+.map-wrapper {
+	border-top: 4px solid #fff;
+}

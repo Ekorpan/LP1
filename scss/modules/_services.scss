@@ -1,0 +1,97 @@
+.services {
+	min-height: 100vh;
+	text-align: center;
+	font-family: $title;
+	background: $lightgrey;
+	padding-bottom: 40px;
+	&__title {
+		color: $fontcolor;
+		
+		font-size: 50px;
+		font-weight: 900;
+		text-transform: capitalize;
+		margin-bottom: 35px;
+		padding-top: 40px;
+		position: relative;
+		padding-bottom: 20px;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			height: 2px;
+			background-color: $fontcolor;
+			right: 0;
+			margin: 0 auto;
+			display: block;
+			
+		}
+	}
+
+	&__portfolio {
+
+		&--top {
+			margin-bottom: 30px;
+		}
+		
+	}
+	&__item {
+		cursor: pointer;
+		//position: relative;
+	}
+	&__hover {
+		font-size: 18px;
+		line-height: 28px;
+		display:none;
+		color: #fff;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+	    top:0;
+	    padding: 40px 50px 30px 50px;
+	    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	    
+	    transition: all .5s;
+
+	    
+	    
+	    &--first {
+	    	padding-bottom: 20px;
+	    }
+	    
+		
+	}
+	&__desc {
+
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 20px;
+		
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	transition: transform 0.1s;
+	//overflow: hidden;
+
+	
+
+}
+.wrapper:hover .hover {
+	position: absolute;
+		display: block;
+		background:rgba(0,0,0, 0.6);
+		left:0;
+		transition: all .5s ease-in-out;
+		
+	}
+.services img {
+	height: 320px;
+	width: 370px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+	
+}

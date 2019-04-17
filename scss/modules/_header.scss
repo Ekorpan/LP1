@@ -1,0 +1,134 @@
+.header {
+    min-height: 100vh;
+    height: 100%;
+    background-color: $lightgrey;
+    overflow: hidden;
+
+    &__phone {
+        color: #FFF;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        width: 100%;
+        background-color: $blue;
+        text-align: center;
+        line-height: 36px;
+        
+
+    }
+    &__phone-number {
+        text-decoration: none;
+        color: #FFF;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        
+
+        height: 133px;
+       
+
+    }
+    &__bg {
+        background: url(../images/hero_image.jpg) no-repeat top;
+        background-size: contain;
+        height: 100%;
+    }
+    &__text {
+        display: flex;
+        -webkit-justify-content: center;
+                justify-content: center;
+        text-align: left;
+        font-family: $title;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 70px;
+        //margin-top: 30px;
+        padding-top: 90px;
+        margin-bottom: 100px;
+        
+        
+
+    }
+    &__title {
+        color: $fontcolor;
+    }
+    &__desc {
+        font-weight: 400;
+
+    }
+    &__contact {
+        display: flex;
+        -webkit-justify-content: center;
+                justify-content: center;
+        padding-right: 200px;
+     }   
+        
+
+        &__contact-button {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            background: $fontcolor;
+            padding: 15px 30px;
+            -webkit-border-radius: 11px;
+                    border-radius: 11px;
+            &:hover {
+            background: #5DB0B6;
+        }
+            
+        }
+        &__contact-phone {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            margin-top: 50px;
+            font-family: $title;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 40px;
+            
+
+        }
+    
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 46%;
+    margin-right: 13%;
+    flex-grow: 1;
+    
+
+    &__item {
+        text-transform: capitalize;
+
+    }
+    &__link {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        
+        &:hover {
+            border-bottom: 2px solid $fontcolor;
+        }
+    }
+}
+
+.umpersant {
+    color: #000;
+    font-weight: 400;
+    font-family: $font;
+}
+[class^=icon-] {
+    color: $fontcolor;
+    font-size: 18px;
+}
+
+.logo {
+    position: absolute;
+}
